@@ -1,0 +1,97 @@
+/* =================================================
+   Modern CSS Framework - Layout, Grid & Flex Modülü (Saf)
+   ================================================== */
+
+/****************** 1. Display ve Flexbox Sınıfları */
+.d-none {display: none;}
+.d-block {display: block;}
+.d-inline {display: inline;}
+.d-inline-block {display: inline-block;}
+.d-flex {display: flex;}
+.d-inline-flex {display: inline-flex;}
+.d-grid {display: grid;}
+.d-inline-grid {display: inline-grid;}
+
+/* Yön (Direction) */
+.flex-row { flex-direction: row; }
+.flex-col { flex-direction: column; }
+.flex-row-reverse { flex-direction: row-reverse; }
+.flex-col-reverse { flex-direction: column-reverse; }
+
+/* Sarma (Wrap) */
+.flex-wrap { flex-wrap: wrap; }
+.flex-nowrap { flex-wrap: nowrap; }
+.flex-wrap-reverse { flex-wrap: wrap-reverse; }
+
+/* Yatay Hizalama (Justify Content) */
+.justify-start { justify-content: flex-start; }
+.justify-end { justify-content: flex-end; }
+.justify-center { justify-content: center; }
+.justify-between { justify-content: space-between; }
+.justify-around { justify-content: space-around; }
+.justify-evenly { justify-content: space-evenly; }
+
+/* Dikey Hizalama (Align Items) */
+.items-start { align-items: flex-start; }
+.items-end { align-items: flex-end; }
+.items-center { align-items: center; }
+.items-baseline { align-items: baseline; }
+.items-stretch { align-items: stretch; }
+
+/* Büyüme / Küçülme (Grow / Shrink) */
+.flex-1 { flex: 1 1 0%; }
+.flex-auto { flex: 1 1 auto; }
+.flex-none { flex: none; }
+
+/******************* 2. Container (Kapsayıcı) - Sadece genişlik ve ortalama yönetir */
+.container {
+  width: 100%;
+  margin-inline: auto;
+  padding-inline: 1rem;
+  box-sizing: border-box;
+}
+
+/* Ekran kırılma noktalarına göre container genişlikleri */
+@media (min-width: 640px)  { .container { max-width: 640px; } }
+@media (min-width: 768px)  { .container { max-width: 768px; } }
+@media (min-width: 1024px) { .container { max-width: 1024px; } }
+@media (min-width: 1280px) { .container { max-width: 1280px; } }
+
+/******************* 3. Grid Sistemi */
+
+/* Automatic Responsive Grid */
+.grid-auto {
+  display: grid;
+  grid-template-columns: repeat(
+    auto-fit,
+    minmax(min(100%, 16rem), 1fr)
+  );
+  min-width: 0;
+}
+
+/* Grid Columns */
+.grid-cols-1 {grid-template-columns: minmax(0, 1fr);}
+.grid-cols-2 {grid-template-columns: repeat(2, minmax(0, 1fr));}
+.grid-cols-3 {grid-template-columns: repeat(3, minmax(0, 1fr));}
+.grid-cols-4 {grid-template-columns: repeat(4, minmax(0, 1fr));}
+.grid-cols-5 {grid-template-columns: repeat(5, minmax(0, 1fr));}
+.grid-cols-6 {grid-template-columns: repeat(6, minmax(0, 1fr));}
+
+/* Column Span */
+.col-span-1 {grid-column: span 1;}
+.col-span-2 {grid-column: span 2;}
+.col-span-3 {grid-column: span 3;}
+.col-span-4 {grid-column: span 4;}
+.col-span-5 {grid-column: span 5;}
+.col-span-6 {grid-column: span 6;}
+.col-span-full {grid-column: 1 / -1;}
+
+
+/******************* 4. Gaps */
+.gap-0 {gap: 0;}
+.gap-1 {gap: 0.25rem;}
+.gap-2 {gap: 0.5rem;}
+.gap-3 {gap: 0.75rem;}
+.gap-4 {gap: 1rem;}
+.gap-6 {gap: 1.5rem;}
+.gap-8 {gap: 2rem;}

@@ -15,3 +15,6 @@ https://raw.githubusercontent.com/bimaden/bicss/refs/heads/main/spacing.css
 
 Typography
 https://raw.githubusercontent.com/bimaden/bicss/refs/heads/main/typography.css
+
+Utilities
+https://raw.githubusercontent.com/bimaden/bicss/refs/heads/main/utilities.css

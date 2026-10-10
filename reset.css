@@ -1,0 +1,95 @@
+/* =================================================olgu
+   Modern CSS Framework - Reset & Base Modülü
+   ================================================== */
+
+/* 1. Box-sizing modelini evrensel olarak standartlaştır */
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+/* 2. Varsayılan dış ve iç boşlukları sıfırla */
+body,
+h1, h2, h3, h4, h5, h6,
+p,
+figure,
+blockquote,
+dl, dd {
+  margin: 0;
+  padding: 0;
+}
+
+/* 3. Liste türlerindeki varsayılan biçimlendirmeleri kaldır */
+ul[class],
+ol[class] {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+/* 4. Gövde (Body) için temel tipografi ve akış ayarları */
+body {
+  min-height: 100vh;
+  scroll-behavior: smooth;
+  text-rendering: optimizeSpeed;
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen, Ubuntu, Cantarell, sans-serif;
+  background-color: #ffffff;
+  color: #212529;
+}
+
+/* 5. Medya elementlerinin (görsel, video vb.) taşmasını önle ve esnek yap */
+img,
+picture,
+video,
+canvas,
+svg {
+  display: block;
+  max-width: 100%;
+  height: auto;
+}
+
+/* 6. Form elementlerinin miras almasını sağla */
+input,
+button,
+textarea,
+select {
+  font: inherit;
+  color: inherit;
+}
+
+/* Butonların varsayılan stillerini sıfırla */
+button,
+[type="button"],
+[type="reset"],
+[type="submit"] {
+  background: none;
+  border: none;
+  cursor: pointer;
+  padding: 0;
+}
+
+/* 7. Bağlantı (Link) stillerini düzenle */
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+/* 8. Tablo sınırlarını ve boşluklarını düzenle */
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+  width: 100%;
+}
+
+/* 9. Kullanıcı Hareketi Tercihlerine Saygı (Erişilebilirlik) */
+@media (prefers-reduced-motion: reduce) {
+  *,
+  *::before,
+  *::after {
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.01ms !important;
+    scroll-behavior: auto !important;
+  }
+}

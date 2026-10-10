@@ -1,0 +1,181 @@
+/* =================================================
+   Modern CSS Framework - Colors & Theme Modülü (Trendyol Theme)
+   ================================================== */
+
+/* Varsayılan: Açık Tema (Light Mode) - Trendyol Palette */
+:root, [data-theme="light"] {
+  /* Trendyol Primary (Turuncu Tonları) */
+  --color-primary-50:  #fff4ee;
+  --color-primary-100: #fedad0;
+  --color-primary-500: #f27a1a; /* Ana Trendyol Turuncusu */
+  --color-primary-600: #e06d10;
+  --color-primary-700: #c95e08;
+
+  /* Nötr / Gri Tonları (E-ticaret arayüzü için optimize edilmiş) */
+  --color-gray-50:  #f8f8f8;
+  --color-gray-100: #f2f2f2;
+  --color-gray-200: #e6e6e6;
+  --color-gray-300: #d8d8d8;
+  --color-gray-400: #b5b5b5;
+  --color-gray-500: #8c8c8c;
+  --color-gray-600: #666666;
+  --color-gray-700: #4a4a4a;
+  --color-gray-800: #333333;
+  --color-gray-900: #191919;
+
+  /* Durum Renkleri (Feedback / Status) */
+  --color-success-bg:     #eef9f0;
+  --color-success-text:   #038f32;
+  --color-success-border: #2bb653;
+
+  --color-warning-bg:     #fff9e6;
+  --color-warning-text:   #b87a00;
+  --color-warning-border: #fca311;
+
+  --color-danger-bg:      #fff0f0;
+  --color-danger-text:    #d32f2f;
+  --color-danger-border:  #f55757;
+  
+  --color-white: #ffffff;
+  --color-black: #000000;
+}
+
+/* Karanlık Tema (Dark Mode) - Trendyol Dark Palette */
+@media (prefers-color-scheme: dark) {
+  :root:not([data-theme="light"]) {
+    --color-primary-50:  #26150a;
+    --color-primary-100: #3d210f;
+    --color-primary-500: #f27a1a;
+    --color-primary-600: #ff9138;
+    --color-primary-700: #ffab66;
+
+    --color-gray-50:  #121212;
+    --color-gray-100: #1a1a1a;
+    --color-gray-200: #262626;
+    --color-gray-300: #333333;
+    --color-gray-400: #4d4d4d;
+    --color-gray-500: #8c8c8c;
+    --color-gray-600: #a6a6a6;
+    --color-gray-700: #bfbfbf;
+    --color-gray-800: #d9d9d9;
+    --color-gray-900: #f2f2f2;
+
+    --color-success-bg:     #0d2314;
+    --color-success-text:   #4cd97b;
+    --color-success-border: #2bb653;
+
+    --color-warning-bg:     #261f0d;
+    --color-warning-text:   #ffcb47;
+    --color-warning-border: #fca311;
+
+    --color-danger-bg:      #2c0f0f;
+    --color-danger-text:    #ff7b7b;
+    --color-danger-border:  #f55757;
+    
+    --color-white: #121212;
+    --color-black: #ffffff;
+  }
+}
+
+[data-theme="dark"] {
+  --color-primary-50:  #26150a;
+  --color-primary-100: #3d210f;
+  --color-primary-500: #f27a1a;
+  --color-primary-600: #ff9138;
+  --color-primary-700: #ffab66;
+
+  --color-gray-50:  #121212;
+  --color-gray-100: #1a1a1a;
+  --color-gray-200: #262626;
+  --color-gray-300: #333333;
+  --color-gray-400: #4d4d4d;
+  --color-gray-500: #8c8c8c;
+  --color-gray-600: #a6a6a6;
+  --color-gray-700: #bfbfbf;
+  --color-gray-800: #d9d9d9;
+  --color-gray-900: #f2f2f2;
+
+  --color-success-bg:     #0d2314;
+  --color-success-text:   #4cd97b;
+  --color-success-border: #2bb653;
+
+  --color-warning-bg:     #261f0d;
+  --color-warning-text:   #ffcb47;
+  --color-warning-border: #fca311;
+
+  --color-danger-bg:      #2c0f0f;
+  --color-danger-text:    #ff7b7b;
+  --color-danger-border:  #f55757;
+  
+  --color-white: #121212;
+  --color-black: #ffffff;
+}
+
+/* =================================================
+   Background Color (Arka Plan Renkleri) Sınıfları
+   ================================================== */
+
+.bg-white { background-color: var(--color-white); }
+.bg-black { background-color: var(--color-black); }
+
+.bg-primary-50  { background-color: var(--color-primary-50); }
+.bg-primary-100 { background-color: var(--color-primary-100); }
+.bg-primary-500 { background-color: var(--color-primary-500); }
+.bg-primary-600 { background-color: var(--color-primary-600); }
+.bg-primary-700 { background-color: var(--color-primary-700); }
+
+.bg-gray-50  { background-color: var(--color-gray-50); }
+.bg-gray-100 { background-color: var(--color-gray-100); }
+.bg-gray-200 { background-color: var(--color-gray-200); }
+.bg-gray-300 { background-color: var(--color-gray-300); }
+.bg-gray-700 { background-color: var(--color-gray-700); }
+.bg-gray-800 { background-color: var(--color-gray-800); }
+.bg-gray-900 { background-color: var(--color-gray-900); }
+
+.bg-success { background-color: var(--color-success-bg); }
+.bg-warning { background-color: var(--color-warning-bg); }
+.bg-danger  { background-color: var(--color-danger-bg); }
+
+
+/* =================================================
+   Text Color (Metin Renkleri) Sınıfları
+   ================================================== */
+
+.text-white { color: var(--color-white); }
+.text-black { color: var(--color-black); }
+
+.text-primary-500 { color: var(--color-primary-500); }
+.text-primary-600 { color: var(--color-primary-600); }
+.text-primary-700 { color: var(--color-primary-700); }
+
+.text-gray-400 { color: var(--color-gray-400); }
+.text-gray-500 { color: var(--color-gray-500); }
+.text-gray-600 { color: var(--color-gray-600); }
+.text-gray-700 { color: var(--color-gray-700); }
+.text-gray-800 { color: var(--color-gray-800); }
+.text-gray-900 { color: var(--color-gray-900); }
+
+.text-success { color: var(--color-success-text); }
+.text-warning { color: var(--color-warning-text); }
+.text-danger  { color: var(--color-danger-text); }
+
+
+/* =================================================
+   Border Color (Kenarlık Renkleri) Sınıfları
+   ================================================== */
+
+.border-white { border-color: var(--color-white); }
+.border-black { border-color: var(--color-black); }
+
+.border-primary-500 { border-color: var(--color-primary-500); }
+.border-primary-600 { border-color: var(--color-primary-600); }
+
+.border-gray-200 { border-color: var(--color-gray-200); }
+.border-gray-300 { border-color: var(--color-gray-300); }
+.border-gray-400 { border-color: var(--color-gray-400); }
+.border-gray-700 { border-color: var(--color-gray-700); }
+
+/* Durum (Feedback) Border Renkleri */
+.border-success { border-color: var(--color-success-border); }
+.border-warning { border-color: var(--color-warning-border); }
+.border-danger  { border-color: var(--color-danger-border); }

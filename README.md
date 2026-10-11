@@ -18,3 +18,6 @@ https://raw.githubusercontent.com/bimaden/bicss/refs/heads/main/typography.css
 
 Utilities
 https://raw.githubusercontent.com/bimaden/bicss/refs/heads/main/utilities.css
+
+Transitions
+https://raw.githubusercontent.com/bimaden/bicss/refs/heads/main/transitions.css

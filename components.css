@@ -1,6 +1,4 @@
-```css
 /**
- * bicss - CARD.CSS
  * Standalone Card component
  */
 
@@ -73,4 +71,3 @@
 .card-group > .card {
     flex: 1 1 16rem;
 }
-```

@@ -1,0 +1,86 @@
+/**
+ * bicss - TRANSITION.CSS
+ * Standalone transition utilities
+ */
+
+/* Variables */
+:root {
+    --bicss-t-fast: 150ms;
+    --bicss-t-base: 200ms;
+    --bicss-t-slow: 300ms;
+
+    --bicss-t-ease: cubic-bezier(0.4, 0, 0.2, 1);
+    --bicss-t-ease-out: cubic-bezier(0, 0, 0.2, 1);
+    --bicss-t-ease-in: cubic-bezier(0.4, 0, 1, 1);
+    --bicss-t-ease-in-out: cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+/* Property */
+.transition {
+    transition-property: color, background-color, border-color, opacity, box-shadow, transform;
+    transition-duration: var(--bicss-t-base);
+    transition-timing-function: var(--bicss-t-ease);
+}
+
+.transition-all {
+    transition-property: all;
+    transition-duration: var(--bicss-t-base);
+    transition-timing-function: var(--bicss-t-ease);
+}
+
+.transition-colors {
+    transition-property: color, background-color, border-color;
+    transition-duration: var(--bicss-t-base);
+    transition-timing-function: var(--bicss-t-ease);
+}
+
+.transition-opacity {
+    transition-property: opacity;
+    transition-duration: var(--bicss-t-base);
+    transition-timing-function: var(--bicss-t-ease);
+}
+
+.transition-transform {
+    transition-property: transform;
+    transition-duration: var(--bicss-t-base);
+    transition-timing-function: var(--bicss-t-ease);
+}
+
+.transition-shadow {
+    transition-property: box-shadow;
+    transition-duration: var(--bicss-t-base);
+    transition-timing-function: var(--bicss-t-ease);
+}
+
+.transition-none {transition: none;}
+
+/* Duration */
+.duration-fast {transition-duration: var(--bicss-t-fast);}
+.duration-base {transition-duration: var(--bicss-t-base);}
+.duration-slow {transition-duration: var(--bicss-t-slow);}
+
+/* Easing */
+.ease {transition-timing-function: var(--bicss-t-ease);}
+.ease-in {transition-timing-function: var(--bicss-t-ease-in);}
+.ease-out {transition-timing-function: var(--bicss-t-ease-out);}
+.ease-in-out {transition-timing-function: var(--bicss-t-ease-in-out);}
+
+/* Presets */
+.transition-fast {transition: all var(--bicss-t-fast) var(--bicss-t-ease-out);}
+.transition-base {transition: all var(--bicss-t-base) var(--bicss-t-ease);}
+.transition-slow {transition: all var(--bicss-t-slow) var(--bicss-t-ease);}
+
+/* Reduced Motion */
+@media (prefers-reduced-motion: reduce) {
+    .transition,
+    .transition-all,
+    .transition-colors,
+    .transition-opacity,
+    .transition-transform,
+    .transition-shadow,
+    .transition-fast,
+    .transition-base,
+    .transition-slow {
+        transition: none;
+    }
+}

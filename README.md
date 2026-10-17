@@ -86,6 +86,17 @@ Include the modules you need in your HTML document.
 </head>
 ```
 
+```
+1. https://raw.githubusercontent.com/bimaden/bicss/refs/heads/main/reset.css
+2. https://raw.githubusercontent.com/bimaden/bicss/refs/heads/main/colors.css
+3. https://raw.githubusercontent.com/bimaden/bicss/refs/heads/main/layout.css
+4. https://raw.githubusercontent.com/bimaden/bicss/refs/heads/main/spacing.css
+5. https://raw.githubusercontent.com/bimaden/bicss/refs/heads/main/typography.css
+6. https://raw.githubusercontent.com/bimaden/bicss/refs/heads/main/utilities.css
+7. https://raw.githubusercontent.com/bimaden/bicss/refs/heads/main/transitions.css
+8. https://raw.githubusercontent.com/bimaden/bicss/refs/heads/main/components.css
+```
+
 You do not need to include every module. Choose the files that fit your project.
 
 ## Design Philosophy

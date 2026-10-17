@@ -177,3 +177,72 @@
     padding: 0;
     flex-shrink: 0;
 }
+
+
+/*******************************************************************************
+NAVIGATION COMPONENT (Bağımsız Menü Bileşeni)
+******************************************************************************/
+.nav-toggle {
+  display: none;
+}
+
+/* Overlay */
+.nav-overlay {
+  display: none;
+  position: fixed;
+  inset: 0;
+  z-index: 999;
+}
+
+/* Menü (Masaüstü varsayılanı) */
+.nav-menu {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+  z-index: 1000;
+  list-style: none;
+}
+
+.nav-toggle-btn {
+  display: none;
+  cursor: pointer;
+  z-index: 1002;
+  background: none;
+  border: none;
+}
+
+/* Mobil Görünüm (768px ve altı) */
+@media (max-width: 768px) {
+  .nav-toggle-btn {
+    display: block;
+  }
+  
+  .nav-menu {
+    position: fixed;
+    top: 0;
+    right: 0;
+    width: 280px;
+    height: 100vh;
+    flex-direction: column;
+    align-items: flex-start;
+    /* Performanslı açılış animasyonu */
+    transform: translateX(100%); 
+    transition: transform 0.3s ease-in-out;
+  }
+
+  /* Menü açıldığında */
+  .nav-toggle:checked ~ .nav-menu {
+    transform: translateX(0);
+  }
+
+  /* Overlay gösterimi */
+  .nav-toggle:checked ~ .nav-overlay {
+    display: block;
+    animation: fadeIn 0.2s ease;
+  }
+}
+
+@keyframes fadeIn {
+  from { opacity: 0; }
+  to { opacity: 1; }
+}
